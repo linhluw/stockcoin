@@ -7,6 +7,7 @@ using GrpcServiceStock.SendTelegram;
 using GrpcServiceStock.Common;
 using System.IO;
 using GrpcServiceStock.Enum;
+using GrpcServiceStock.SQL;
 
 namespace GrpcServiceStock
 {
@@ -32,6 +33,8 @@ namespace GrpcServiceStock
 
                 if (ConfigurationHelper.IsModuleSSI)
                 {
+                    SqlData.Int();
+
                     // Reset Timer => 5 phút kiểm tra 1 lần 300000
                     _RefreshSSITimer.Interval = 300000;
                     _RefreshSSITimer.Elapsed += new System.Timers.ElapsedEventHandler(RefreshSSITimer_Elapsed);

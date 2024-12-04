@@ -1,6 +1,5 @@
 using GrpcServiceStock;
 using GrpcServiceStock.Common;
-using GrpcServiceStock.SQL;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
@@ -11,8 +10,6 @@ namespace GrpcServiceLab
         public static void Main(string[] args)
         {
             ConfigurationHelper.Configuration();
-
-            SqlData.Int();
 
             OnlineManager.Init();
 

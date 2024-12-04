@@ -84,7 +84,6 @@ namespace GrpcServiceStock.SQL
                 if (getValue != null)
                 {
                     value = DateTime.Parse(getValue);
-
                 }
             }
             catch (Exception ex)
