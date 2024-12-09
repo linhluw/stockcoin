@@ -28,8 +28,8 @@ namespace GrpcServiceStock
         {
             try
             {
-                Console.WriteLine($"{DateTime.Now} | Bắt đầu khởi tạo service");
-                GenFileClass.CreateLogDataEvent("Bắt đầu khởi tạo service");
+                Console.WriteLine($"{DateTime.Now} | Bắt đầu khởi tạo service.");
+                GenFileClass.CreateLogDataEvent("Bắt đầu khởi tạo service.");
 
                 if (ConfigurationHelper.IsModuleSSI)
                 {
