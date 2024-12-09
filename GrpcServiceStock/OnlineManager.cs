@@ -19,7 +19,7 @@ namespace GrpcServiceStock
 
         private static DateTime refreshCoinTime = DateTime.Today;
 
-        private static DateTime refreshSSITime = DateTime.Today.AddHours(18); // xử lý vào lúc 6h chiều
+        private static DateTime refreshSSITime = DateTime.Today.AddHours(18); // xử lý vào lúc 6h tối
 
         /// <summary>
         /// Gọi hàm khởi tạo
