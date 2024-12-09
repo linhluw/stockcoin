@@ -13,9 +13,9 @@ namespace GrpcServiceStock
 {
     public class OnlineManager
     {
-        private static System.Timers.Timer _RefreshSSITimer = new System.Timers.Timer();
+        private static Timer _RefreshSSITimer = new Timer();
 
-        private static System.Timers.Timer _RefreshCoinTimer = new System.Timers.Timer();
+        private static Timer _RefreshCoinTimer = new Timer();
 
         private static DateTime refreshCoinTime = DateTime.Today;
 
